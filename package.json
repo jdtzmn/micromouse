@@ -1,7 +1,7 @@
 {
   "name": "micromouse",
   "version": "1.0.0",
-  "description": "a micromouse simulator for writing an algorithm on",
+  "description": "A micromouse simulator as the basis for writing an algorithm",
   "scripts": {
     "start": "webpack --config config/webpack.dev.js",
     "test": "jest",
