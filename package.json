@@ -6,7 +6,7 @@
     "start": "webpack --config config/webpack.dev.js",
     "test": "jest",
     "build": "webpack --config config/webpack.prod.js",
-    "lint": "tslint -p . -c tslint.json"
+    "lint": "tslint src/**/*.ts -c tslint.json"
   },
   "husky": {
     "hooks": {

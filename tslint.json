@@ -1,20 +1,8 @@
 {
   "extends": [
-    "tslint:recommended",
     "tslint-config-standard"
   ],
   "linterOptions": {
     "format": "stylish"
-  },
-  "rules": {
-    "semicolon": false,
-    "quotemark": false,
-    "trailing-comma": false,
-    "object-literal-sort-keys": false,
-    "space-before-function-paren": false,
-    "ordered-imports": false,
-    "no-floating-promises": false,
-    "curly": false,
-    "interface-name": [true, "never-prefix"]
   }
 }
