@@ -2,7 +2,7 @@ const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: './src/cricket.ts',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
@@ -23,11 +23,13 @@ module.exports = {
     extensions: [ '.ts' ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['./dist'], {
+      root: path.resolve(__dirname, '../')
+    })
   ],
   output: {
-    filename: 'cricket.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'micromouse.js',
+    path: path.resolve(__dirname, '../dist'),
     libraryTarget: 'umd',
     libraryExport: 'default',
     umdNamedDefine: true
